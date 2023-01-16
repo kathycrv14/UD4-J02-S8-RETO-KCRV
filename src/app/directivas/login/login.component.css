@@ -1,0 +1,52 @@
+.loginRegistro{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.contornoLogin{
+    border: 1px solid;
+    border-color: blue;
+    padding: 2rem;
+    width: 40rem;
+}
+
+.datosLoginGeneral{
+    padding: 2rem;
+}
+
+.datosLogin{
+    display: flex;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid;
+}
+.sectionBtn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.btnLogin{
+    letter-spacing: 5px;
+    color: rgb(0, 140, 255);
+    border: 1px solid;
+    border-color: rgb(0, 140, 255);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.msjIncorrecto{
+    font-weight: bolder;
+    color: red;
+}
+
+.msjCorrecto{
+    font-weight: bolder;
+    color: green;
+}

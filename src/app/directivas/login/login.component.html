@@ -1,0 +1,39 @@
+<section class="loginRegistro">
+    <section class="contornoLogin">
+        <h1>LOGIN</h1>
+        <section class="datosLoginGeneral">
+                <form action="">
+                    <section class="datosLogin row">
+                    <section class="col-6">
+                        <p>Usuario:</p>                
+                    </section>
+                    <section class="col-6">
+                        <input type="text" #txtUser>                   
+                    </section>
+                    </section>
+                    <section class="datosLogin row">
+                    <section class="col-6">
+                        <p>Password:</p>                
+                    </section>
+                    <section class="col-6">
+                        <input type="text" #txtPassword>                   
+                    </section>
+                    </section>                                         
+                </form>
+        </section>
+        <section class="sectionBtn">
+            <input type="button" value="LOGIN" class="btnLogin" (click)="Validar(txtUser.value, txtPassword.value)">            
+        </section>
+        <section>
+            <p *ngIf="resultado == false; else correcto" class="msjIncorrecto">{{ mensaje }}</p>
+                <ng-template #correcto>
+                    <p class="msjCorrecto">{{ mensaje }}</p>
+                    <ul class="list-group">
+                        <li *ngFor="let pag of paginas" class="list-group-item">
+                            <a href="#">{{ pag }}</a>
+                        </li>
+                    </ul>
+                </ng-template>
+        </section>
+    </section>
+</section>
